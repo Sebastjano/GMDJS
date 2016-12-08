@@ -1,0 +1,40 @@
+.cards
+	display: flex
+	flex-direction: column
+	position: relative
+	min-height: 200px
+	z-index: 1
+	border-radius: 2px
+	background-color: $primary-text
+	&__header
+		padding: 16px
+		min-height: 64px
+
+	&__menu
+		position: absolute
+		right: 16px
+		top: 16px
+
+	&__title
+
+	&__media
+		background-size: cover
+		background-origin: padding-box
+		background: $accent-color repeat scroll 50% 50%
+		box-sizing: border-box
+
+	&__text
+		color: rgba(0,0,0,.54)
+		font-size: 1rem
+		line-height: 18px
+		overflow: hidden
+		padding: 16px
+		width: 90%
+
+	&__actions
+		font-size: 16px
+		line-height: normal
+		width: 100%
+		background-color: transparent
+		padding: 8px
+		box-sizing: border-box
