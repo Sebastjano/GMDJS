@@ -1,2 +1,32 @@
-section.cards
-	h2 Cards
++b.SECTION.section
+	+e.description
+		+e.H2.title Cards
+
+	+e.component
+
+		// Card
+		+b.cards._small.shadow_2dp-hover
+			+e.SPAN.menu
+			+e.title._small
+				div(style='background-color: grey;')
+				div
+					h2 Title goes here
+					span Subtitle here
+			+e.content
+				p On tablet/desktop, cards should follow the 24dp keyline. See Metrics & Keylines for more information.
+				| Top padding: 16dp
+				| Bottom padding: 24dp (16dp if there are additional actions or text below)
+
+
+		// Corner card with media
+		+b.cards._small.shadow_2dp-hover
+			+e.SPAN.menu
+			+e.title._small
+				div(style='background-color: grey;')
+				div
+					h2 Title goes here
+					span Subtitle here
+			+e.content
+				p On tablet/desktop, cards should follow the 24dp keyline. See Metrics & Keylines for more information.
+				| Top padding: 16dp
+				| Bottom padding: 24dp (16dp if there are additional actions or text below)

@@ -5,6 +5,7 @@ let browserSync   = require('browser-sync'),
 		autoprefixer  = require('autoprefixer'),
 		cssnano       = require('cssnano'),
 		fonts         = require('postcss-font-magician'),
+		
 		sass          = require('gulp-sass'),
 		bourbon       = require('node-bourbon'),
 		media         = require('gulp-group-css-media-queries'),
