@@ -1,0 +1,32 @@
++b.SECTION.section
+	+e.description
+		+e.H2.title Buttons
+
+	+e.component
+
+		// Card
+		+b.cards._small.shadow_2dp-hover
+			+e.SPAN.menu
+			+e.title._small
+				div(style='background-color: grey;')
+				div
+					h2 Title goes here
+					span Subtitle here
+			+e.content
+				p On tablet/desktop, cards should follow the 24dp keyline. See Metrics & Keylines for more information.
+				| Top padding: 16dp
+				| Bottom padding: 24dp (16dp if there are additional actions or text below)
+
+		//Raised buttons
+		+b.BUTTON.gmd-button._raised raised
+		+b.BUTTON.gmd-button._raised._raised-disabled disabled
+		+b.BUTTON.gmd-button._raised._colored colored
+		+b.BUTTON.gmd-button._raised._accented accented
+		+b.BUTTON.gmd-button regular
+		+b.BUTTON.gmd-button.gmd-button-dense Dense
+		+b.BUTTON.gmd-button.gmd-button-colored flat colored
+		+b.BUTTON.gmd-button.gmd-button-accented flat accented
+		+b.BUTTON.gmd-button.gmd-button-disabled flat dis
+		+b.BUTTON.gmd-button._pilled._colored pill color
+		+b.BUTTON.gmd-button._pilled._accented pill accent
+		+b.BUTTON.gmd-button._pilled._pilled-disabled pill disable
