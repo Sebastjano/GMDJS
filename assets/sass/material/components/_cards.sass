@@ -26,31 +26,42 @@
 		right: 16px
 		top: 16px
 
+	&__border
+		border-bottom: 1px solid rgba(0,0,0,0.1)
+
 	&__title
-		height: 72px
 		padding:
 			left: 16px
 			right: 16px
 		// element modifiers
 		&_small
+			height: 72px
 			display: flex
 			padding:
 				top: 16px
 				bottom: 16px
 			>*:first-child
 				border-radius: 100%
-				height: 40px
-				width: 40px
+				min-height: 40px
+				min-width: 40px
+				background: $secondary-text center center
+				z-index: 5
 			>*:last-child
 				margin-left: 16px
+				overflow: hidden
+				white-space: nowrap
 				*:first-child
 					font-size: 14px
 					font-weight: 700
+					overflow: hidden
+					text-overflow: ellipsis
 					margin-bottom: .5em
 					color: $primary-text
 				*:last-child
 					font-size: 14px
 					font-weight: 500
+					overflow: hidden
+					text-overflow: ellipsis
 					color: $disabled-text
 
 		&_large
@@ -79,14 +90,23 @@
 					font-size: 14px
 					font-weight: 500
 					color: $disabled-text
+
 	&__media
 		background-size: cover
 		background-origin: padding-box
-		background: $accent-color repeat scroll 50% 50%
+		background: $primary-color repeat scroll 50% 50%
 		box-sizing: border-box
 		padding: 24px
+		&_square
+			position: relative
+			width: 100%
+			padding-top: 100%
+		&_16-9
+			position: relative
+			width: 100%
+			padding-top: 56.25%
 
-	&__content
+	&__text
 		color: $secondary-text
 		font-size: 14px
 		line-height: 18px
@@ -103,11 +123,18 @@
 
 
 	&__actions
+		display: flex
 		font-size: 16px
 		line-height: normal
 		width: 100%
 		background-color: transparent
 		padding: 8px
 		box-sizing: border-box
-		&:first-child
-			margin-left: 8px
+		&_row
+			flex-direction: row
+		&_reverse
+			flex-direction: row-reverse
+	&__actions-button
+		margin-right: 8px
+	&__actions-icon
+		margin-right: 16px

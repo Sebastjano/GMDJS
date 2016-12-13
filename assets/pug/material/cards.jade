@@ -8,25 +8,84 @@
 		+b.cards._small.shadow_2dp-hover
 			+e.SPAN.menu
 			+e.title._small
-				div(style='background-color: grey;')
+				div(style='background-image: url(http://lorempixel.com/100/100/people/1);')
 				div
-					h2 Title goes here
-					span Subtitle here
-			+e.content
+					h2 Very long title goes here bla-bla-bal and one more time
+					span Subtitle here is long too for example. Text text text text text
+			+e.text
 				p On tablet/desktop, cards should follow the 24dp keyline. See Metrics & Keylines for more information.
 				| Top padding: 16dp
 				| Bottom padding: 24dp (16dp if there are additional actions or text below)
 
 
 		// Corner card with media
-		+b.cards._small.shadow_2dp-hover
+		+b.cards._midle.shadow_2dp-hover
 			+e.SPAN.menu
-			+e.title._small
-				div(style='background-color: grey;')
-				div
-					h2 Title goes here
-					span Subtitle here
-			+e.content
+			+e.title._large-more
+				h2 Title goes here
+				span Subtitle here
+			+e.media._16-9
+			+e.text
 				p On tablet/desktop, cards should follow the 24dp keyline. See Metrics & Keylines for more information.
 				| Top padding: 16dp
 				| Bottom padding: 24dp (16dp if there are additional actions or text below)
+
+
+		// Card with actions
+		+b.cards._small.shadow_2dp-hover
+			+e.SPAN.menu
+			+e.title._small
+				div(style='background-image: url(http://lorempixel.com/40/40/people/2);')
+				div
+					h2 Title goes here
+					p Subtitle here
+
+			+e.border
+			+e.text-more
+				p
+				|	On tablet/desktop, cards should follow the 24dp keyline. See Metrics & Keylines for more information.
+				| Top padding: 16dp
+				| Bottom padding: 24dp (16dp if there are additional actions or text below)
+
+			+e.border
+			+e.actions
+				+b.gmd-button.gmd-button-colored.__actions-button Done
+				+b.gmd-button.__actions-button Cancel
+
+
+		// Card with actions
+		+b.cards._large.shadow_2dp-hover
+			+e.media._16-9(style='background-image: url(http://lorempixel.com/100/100/nature/2);')
+			+e.title._large-more
+				h2 Title goes here
+				p Subtitle here
+
+			+e.border
+			+e.actions
+				+b.gmd-button.gmd-button-accented.__actions-button Done
+				+b.gmd-button.__actions-button Cancel
+
+
+		// Card with actions
+		+b.cards._midle.shadow_2dp-hover
+			+e.title._small
+				div
+				div
+					h3 John Peterson
+					p Designer
+
+			+e.text
+				p
+				|  On tablet/desktop, cards should follow the 24dp keyline. See Metrics & Keylines for more information.
+				| Top padding: 16dp
+				| Bottom padding: 24dp (16dp if there are additional actions or text below)
+
+			+e.media._16-9(style='background-image: url(http://lorempixel.com/100/100/nature/2);')
+			+e.title._large-more
+				h2 Title goes here
+				p Subtitle here
+
+			+e.border
+			+e.actions._reverse
+				+b.gmd-button.gmd-button-accented.__actions-button Done
+				+b.gmd-button.__actions-button Cancel
