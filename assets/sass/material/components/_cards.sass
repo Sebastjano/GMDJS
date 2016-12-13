@@ -17,10 +17,6 @@
 		max-width: 500px
 
 	// elements
-	&__header
-		padding: 16px
-		min-height: 64px
-
 	&__menu
 		position: absolute
 		right: 16px
@@ -35,11 +31,11 @@
 			right: 16px
 		// element modifiers
 		&_small
-			height: 72px
+			//height: 72px
 			display: flex
 			padding:
 				top: 16px
-				bottom: 16px
+				//bottom: 16px
 			>*:first-child
 				border-radius: 100%
 				min-height: 40px
@@ -55,6 +51,7 @@
 					font-weight: 700
 					overflow: hidden
 					text-overflow: ellipsis
+					margin-top: 2px
 					margin-bottom: .5em
 					color: $primary-text
 				*:last-child
@@ -96,6 +93,7 @@
 		background-origin: padding-box
 		background: $primary-color repeat scroll 50% 50%
 		box-sizing: border-box
+		background-size: cover
 		padding: 24px
 		&_square
 			position: relative
@@ -121,7 +119,7 @@
 			padding: 16px
 			width: 90%
 
-
+	box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.4)
 	&__actions
 		display: flex
 		font-size: 16px
@@ -132,9 +130,9 @@
 		box-sizing: border-box
 		&_row
 			flex-direction: row
+			button
+				margin-right: 8px
 		&_reverse
 			flex-direction: row-reverse
-	&__actions-button
-		margin-right: 8px
-	&__actions-icon
-		margin-right: 16px
+			button
+				margin-left: 8px
