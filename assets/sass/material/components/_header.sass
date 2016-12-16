@@ -1,0 +1,28 @@
+$header-height: 256px
+$header-height-sm: 128px
+$sticky-header-height: 64px
+$sticky-header-height-sm: 56px
+
+.header
+	position: relative
+	&__row
+		height: $sticky-header-height
+		background-color: $primary-color
+		padding:
+			left: 80px
+			right: 40px
+		&_sticky
+			position: fixed
+			width: 100%
+			z-index: 99
+			top: 0
+
+	&__title
+		display: block
+		position: relative
+		font-family: "Roboto", sans-serif
+		font-size: 20px
+		line-height: 1
+		letter-spacing: .02em
+		font-weight: 400
+		box-sizing: border-box

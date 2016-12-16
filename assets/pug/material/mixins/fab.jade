@@ -1,3 +1,8 @@
-mixin fab(icon)
-	+b.BUTTON.gmd-fab._d
-		i.material-icons= icon
+mixin fab(icon, position)
+	- if(typeof position == 'undefined') position = 'fixed'
+	if position == 'fixed'
+		+b.BUTTON.gmd-fab._d._fixed
+			i.material-icons= icon
+	else if position == 'menu'
+		+b.BUTTON.gmd-fab._d
+			i.material-icons= icon
