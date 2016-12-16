@@ -1,0 +1,32 @@
+.gmd-fab
+	outline: none
+	border: none
+	z-index: 900
+	border-radius: 100%
+	transition: box-shadow .2s
+	background-color: $accent-color
+	+shadow_6dp
+	&:active
+		background-color: lighten($accent-color, 10%)
+		+shadow_12dp
+
+	&_d
+		height: 56px
+		width: 56px
+	&_m
+		height: 40px
+		width: 40px
+	&_fixed
+		position: fixed
+		display: block
+		right: 0
+		bottom: 0
+		margin-right: 40px
+		margin-bottom: 40px
+
+	.material-icons
+		position: absolute
+		height: 24px
+		width: 24px
+		transform: translate(-12px,-12px)
+		color: $cards-dialog
